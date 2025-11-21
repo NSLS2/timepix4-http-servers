@@ -1,0 +1,24 @@
+[project]
+name = "timepix4-http-proxy-server"
+version = "1.0.0"
+description = "FastAPI server for proxying requests to the HTTP server on the detector head and to handle tempus-receiver CLI"
+authors = [
+    {name = "Max Rakitin", email = "mrakitin@bnl.gov"}
+    {name = "Dan Henriksen", email = "dhenrikse@bnl.gov"}
+]
+requires-python = ">=3.8"
+
+[tool.pixi.project]
+channels = ["conda-forge", "pypi"]
+platforms = ["osx-64", "linux-64"]
+
+[tool.pixi.dependencies]
+python = ">=3.8"
+fastapi = ">=0.104.1"
+uvicorn = ">=0.24.0"
+pydantic = ">=2.5.0"
+pytest = ">=7.4.0"
+httpx = ">=0.25.0"
+pytest-asyncio = ">=0.21.0"
+requests = ">=2.31.0"
+psutil = ">=7.1.0,<8"

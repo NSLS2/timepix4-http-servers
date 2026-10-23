@@ -1,4 +1,5 @@
 [workspace]
+requires-pixi = ">=0.82.1"
 authors = ["Max Rakitin <mrakitin@bnl.gov>"]
 channels = ["conda-forge"]
 name = "timepix4-ophyd"
